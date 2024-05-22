@@ -10,9 +10,3 @@ COPY clasificador/ .
 # Instala las dependencias del proyecto
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-
-# Expone el puerto que usa la aplicación Python (ajusta según tu aplicación)
-EXPOSE 5000
-
-# Comando para iniciar la aplicación
-CMD ["python", "app.py"]

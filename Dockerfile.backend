@@ -4,14 +4,14 @@ FROM python:3.9
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Copia el resto de los archivos del proyecto al directorio de trabajo en el contenedor
-COPY backend/ .
+# Copia los archivos del proyecto al directorio de trabajo en el contenedor
+COPY api/ .
 
 # Instala las dependencias del proyecto
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Expone el puerto que usa la aplicación Python (ajusta según tu aplicación)
+# Expone el puerto que usa la aplicación Python
 EXPOSE 5000
 
 # Comando para iniciar la aplicación
