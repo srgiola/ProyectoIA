@@ -1,0 +1,11 @@
+# Utiliza la imagen oficial de MySQL
+FROM mysql:latest
+
+# Establece las variables de entorno
+ENV MYSQL_ROOT_PASSWORD=rootpassword
+ENV MYSQL_DATABASE=your_database_name
+ENV MYSQL_USER=your_user
+ENV MYSQL_PASSWORD=your_password
+
+# Copia el archivo init.sql al directorio de inicialización de MySQL
+COPY init.sql /docker-entrypoint-initdb.d/
