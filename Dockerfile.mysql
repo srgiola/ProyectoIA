@@ -1,0 +1,27 @@
+FROM mysql:8
+
+# Establece las variables de entorno
+ENV MYSQL_ROOT_PASSWORD=rootpassword
+ENV MYSQL_DATABASE=your_database_name
+ENV MYSQL_USER=your_user
+ENV MYSQL_PASSWORD=your_password
+
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copia los archivos del proyecto al directorio de trabajo en el contenedor
+COPY database/ . /docker-entrypoint-initdb.d/
+
+# Extraer el dump.zip y cargar los datos en la base de datos
+RUN apt-get update && apt-get install -y unzip \
+    && unzip /docker-entrypoint-initdb.d/dump.zip -d /docker-entrypoint-initdb.d/ \
+    && rm /docker-entrypoint-initdb.d/dump.zip
+
+# Establece los permisos adecuados
+RUN chown -R mysql:mysql /docker-entrypoint-initdb.d
+
+# Ejecuta el script de datos.sql
+COPY database/datos.sql /docker-entrypoint-initdb.d/
+
+# Exponer el puerto 3306 para MySQL
+EXPOSE 3306
