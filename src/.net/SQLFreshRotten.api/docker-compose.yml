@@ -1,0 +1,58 @@
+version: "3.4"
+
+volumes:
+ datafiles:
+
+name: ia-rotten-fresh
+services:
+ db:
+  container_name: ia-database
+  image: mysql
+  volumes:
+    - datafiles:/var/lib/mysql
+  restart: always
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+  ports:
+  - "3306:3306"
+ api:
+  container_name: ia-api
+  build:
+   context: .
+   dockerfile: Dockerfile
+  depends_on:
+   - db
+  ports:
+   - "8080:8080"
+  restart: always
+  environment:
+    - DBHOST=db
+    - ASPNETCORE_ENVIRONMENT=Development
+
+# version: "3.4"
+
+# volumes:
+#  datafiles:
+
+# services:
+#  db:
+#   image: mysql
+#   volumes:
+#     - datafiles:/var/lib/mysql
+#   restart: always
+#   environment:
+#     MYSQL_ROOT_PASSWORD: root
+#   ports:
+#   - "3306:3306"
+#  mvc:
+#   build:
+#    context: .
+#    dockerfile: Dockerfile
+#   depends_on:
+#    - db
+#   ports:
+#    - "8080:8080"
+#   restart: always
+#   environment:
+#     - DBHOST=db
+#     - ASPNETCORE_ENVIRONMENT=Development 

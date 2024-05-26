@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "60u6At1BdBidSifntJXNTpNRln4X91ZsE4epLb0N5K8=",
+  "Source": "SQLFreshRotten.api",
+  "BasePath": "_content/SQLFreshRotten.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SQLFreshRotten.api\\wwwroot",
+      "Source": "SQLFreshRotten.api",
+      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\",
+      "BasePath": "_content/SQLFreshRotten.api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\files\\movies.txt",
+      "SourceId": "SQLFreshRotten.api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\",
+      "BasePath": "_content/SQLFreshRotten.api",
+      "RelativePath": "files/movies.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\movies.txt"
+    },
+    {
+      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\files\\reviews.txt",
+      "SourceId": "SQLFreshRotten.api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\",
+      "BasePath": "_content/SQLFreshRotten.api",
+      "RelativePath": "files/reviews.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\reviews.txt"
+    },
+    {
+      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\files\\users.txt",
+      "SourceId": "SQLFreshRotten.api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\.net\\SQLFreshRotten.api\\wwwroot\\",
+      "BasePath": "_content/SQLFreshRotten.api",
+      "RelativePath": "files/users.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\users.txt"
+    }
+  ]
+}
