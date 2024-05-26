@@ -1,6 +1,8 @@
 import pandas as pd
+import joblib
 import nltk
 from collections import defaultdict
+from sklearn.model_selection import train_test_split
 from math import log
 
 nltk.download('punkt')
@@ -19,8 +21,23 @@ count_rotten = 0
 # Tamaño del chunk
 chunk_size = 100000
 
-# Leer el archivo CSV en chunks
+# Dividir los datos en entrenamiento y validación
+train_data_chunks = []
+valid_data_chunks = []
+
 for chunk in pd.read_csv(dataset_path, chunksize=chunk_size):
+    train_chunk, valid_chunk = train_test_split(chunk, test_size=0.2, random_state=42)
+    train_data_chunks.append(train_chunk)
+    valid_data_chunks.append(valid_chunk)
+
+# Guardar los datos de validación y entrenamiento en un archivo pickle
+valid_data = pd.concat(valid_data_chunks)
+valid_data.to_pickle('pkl/valid_data.pkl')
+train_data = pd.concat(train_data_chunks)
+train_data.to_pickle('pkl/train_data.pkl')
+
+# Leer el archivo CSV en chunks
+for chunk in train_data_chunks:
     # Procesar cada fila del chunk
     for record, review_type in zip(chunk['review_content'], chunk['review_type']):
         tokens = nltk.word_tokenize(record, language='english')
@@ -55,32 +72,13 @@ def Get_CPT(frecuency_table, total):
 conditional_prob_table_fresh = Get_CPT(frecuencies_fresh, total_fresh)
 conditional_prob_table_rotten = Get_CPT(frecuencies_rotten, total_rotten)
 
-# Inferencia de Naive Bayes
-def Get_Message_Probability(message, log_prior, conditional_prob_table, total):
-    tokens = nltk.word_tokenize(message, language='english')
-    
-    # Se utilizara un "Suavizado de Laplace" cuando el token no está en la cpt, para evitar underflow numerico
-    laplace_smoothing = log(1 / (total + len(conditional_prob_table)))
-
-    for token in tokens:
-        if token in conditional_prob_table:
-            log_prior += log(conditional_prob_table[token])
-        else:
-            log_prior += laplace_smoothing
-    
-    return log_prior
-
-# Función para predecir si un mensaje es "fresh" o "rotten"
-def Is_Fresh_Or_Rotten(message):
-    log_prob_fresh = Get_Message_Probability(message, log_prior_fresh, conditional_prob_table_fresh, total_fresh)
-    log_prob_rotten = Get_Message_Probability(message, log_prior_rotten, conditional_prob_table_rotten, total_rotten)
-    
-    if log_prob_fresh > log_prob_rotten:
-        return "fresh"
-    else:
-        return "rotten"
-
-# Ejemplo de uso
-message = "to the fantasy"
-review_type = Is_Fresh_Or_Rotten(message)
-print(f"El mensaje '{message}' es clasificado como: {review_type}")
+# Guardar el modelo entrenado
+model = {
+    'log_prior_fresh': log_prior_fresh,
+    'log_prior_rotten': log_prior_rotten,
+    'conditional_prob_table_fresh': conditional_prob_table_fresh,
+    'conditional_prob_table_rotten': conditional_prob_table_rotten,
+    'total_fresh': total_fresh,
+    'total_rotten': total_rotten
+}
+joblib.dump(model, 'pkl/model.pkl')
