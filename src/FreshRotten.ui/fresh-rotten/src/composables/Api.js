@@ -11,6 +11,8 @@ function SendRequest () {
 
 function FailRequest (error) {
   try {
+    console.log(error)
+
     const response = error.response
     const data = response.data
     const contenido = data.failReponse

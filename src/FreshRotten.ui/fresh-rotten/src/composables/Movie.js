@@ -21,6 +21,8 @@ async function GetMovies () {
                             }
                           })
 
+    console.log(movies.value)
+
   }
   catch (error) {
     const errorResponse = Api.FailRequest(error)

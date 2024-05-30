@@ -18,6 +18,13 @@ namespace SQLFreshRotten.api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddCors(opts =>
+            {
+                opts.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
             builder.Services.AddDbContextPool<DbCtx>(options =>
             {
                 string connection = "Server=db;Uid=root;Pwd=root;port=3306;Database=perceptron";
@@ -36,13 +43,7 @@ namespace SQLFreshRotten.api
             });
 
             // INFO: Es para estudiar no debeira de tener cors
-            app.UseCors(option =>
-            {
-                option.AllowAnyHeader();
-                option.AllowAnyOrigin();
-                option.AllowAnyMethod();
-                option.AllowAnyHeader();
-            });
+            app.UseCors("AllowAll");
 
             app.MapGet("/", context 
                                 => Task.Run(() => context.Response.Redirect("/swagger/index.html"))

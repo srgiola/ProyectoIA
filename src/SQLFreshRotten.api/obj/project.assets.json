@@ -2940,11 +2940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\SQLFreshRotten.api.csproj",
+      "projectUniqueName": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\SQLFreshRotten.api.csproj",
       "projectName": "SQLFreshRotten.api",
-      "projectPath": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\SQLFreshRotten.api.csproj",
+      "projectPath": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\SQLFreshRotten.api.csproj",
       "packagesPath": "C:\\Users\\eguer\\.nuget\\packages\\",
-      "outputPath": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\obj\\",
+      "outputPath": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

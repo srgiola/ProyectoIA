@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UYfdn6QK34yzswHagBBspmjxnWIwhteW48OAInOimb8=",
+  "Hash": "FT3Jw4+PmFyEwJmNfXf76+p3ovQwph3Bdqk3TMONMAk=",
   "Source": "SQLFreshRotten.api",
   "BasePath": "_content/SQLFreshRotten.api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SQLFreshRotten.api\\wwwroot",
       "Source": "SQLFreshRotten.api",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\movies.txt",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\movies.txt",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "files/movies.txt",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\files\\movies.txt"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\reviews.txt",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\reviews.txt",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "files/reviews.txt",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\files\\reviews.txt"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\users.txt",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\users.txt",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "files/users.txt",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\files\\users.txt"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\1.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\1.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/1.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\10.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\10.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/10.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\10.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\11.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\11.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/11.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\11.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\12.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\12.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/12.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\12.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\13.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\13.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/13.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\13.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\14.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\14.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/14.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\14.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\2.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\2.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/2.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\3.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\3.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/3.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\4.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\4.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/4.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\5.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\5.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/5.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\6.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\6.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/6.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\7.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\7.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/7.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\8.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\8.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/8.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8.jpg"
     },
     {
-      "Identity": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\9.jpg",
+      "Identity": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\9.jpg",
       "SourceId": "SQLFreshRotten.api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
+      "ContentRoot": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\",
       "BasePath": "_content/SQLFreshRotten.api",
       "RelativePath": "images/9.jpg",
       "AssetKind": "All",

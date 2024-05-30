@@ -1,71 +1,71 @@
 {
   "Files": [
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\movies.txt",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\movies.txt",
       "PackagePath": "staticwebassets\\files\\movies.txt"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\reviews.txt",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\reviews.txt",
       "PackagePath": "staticwebassets\\files\\reviews.txt"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\users.txt",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\files\\users.txt",
       "PackagePath": "staticwebassets\\files\\users.txt"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\1.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\1.jpg",
       "PackagePath": "staticwebassets\\images\\1.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\10.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\10.jpg",
       "PackagePath": "staticwebassets\\images\\10.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\11.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\11.jpg",
       "PackagePath": "staticwebassets\\images\\11.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\12.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\12.jpg",
       "PackagePath": "staticwebassets\\images\\12.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\13.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\13.jpg",
       "PackagePath": "staticwebassets\\images\\13.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\14.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\14.jpg",
       "PackagePath": "staticwebassets\\images\\14.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\2.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\2.jpg",
       "PackagePath": "staticwebassets\\images\\2.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\3.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\3.jpg",
       "PackagePath": "staticwebassets\\images\\3.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\4.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\4.jpg",
       "PackagePath": "staticwebassets\\images\\4.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\5.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\5.jpg",
       "PackagePath": "staticwebassets\\images\\5.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\6.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\6.jpg",
       "PackagePath": "staticwebassets\\images\\6.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\7.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\7.jpg",
       "PackagePath": "staticwebassets\\images\\7.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\8.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\8.jpg",
       "PackagePath": "staticwebassets\\images\\8.jpg"
     },
     {
-      "Id": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\9.jpg",
+      "Id": "D:\\Practica\\Python\\ia\\ProyectoIA\\src\\SQLFreshRotten.api\\wwwroot\\images\\9.jpg",
       "PackagePath": "staticwebassets\\images\\9.jpg"
     },
     {

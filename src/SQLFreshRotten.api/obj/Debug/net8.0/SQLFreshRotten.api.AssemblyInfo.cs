@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SQLFreshRotten.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb8839bd48eea25fd67086d8f048d60f6310a948")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e97d4138dc23110922e075b7c81953a29e869f6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SQLFreshRotten.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SQLFreshRotten.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

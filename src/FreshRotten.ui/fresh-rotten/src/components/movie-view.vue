@@ -70,26 +70,13 @@
         <!--Criticas-->
         <section class="conteiner-chat bg-black">
           <div class="chat-info bg-white">
-            <q-chat-message
-              :text="['hey, how are you?']"
-              sent
-            />
-            <q-chat-message
-              :text="['hey, how are you?']"
-              sent
-            />
-            <q-chat-message
-              :text="['hey, how are you?']"
-              sent
-            />
-            <q-chat-message
-              :text="['hey, how are you?']"
-              sent
-            />
-            <q-chat-message
-              :text="['hey, how are you?']"
-              sent
-            />
+            <section
+              v-for="(review, index) in Reviews.userReviews.value"
+              :key="index"
+            >
+              <q-chat-message v-if="review.isMeMessage" :text="[`${review.message}`]" sent style="padding: 1rem;"  />
+              <q-chat-message :text="[`${review.message}`]" style="padding: 1rem;" />
+            </section>
           </div>
           
           <div
@@ -106,7 +93,7 @@
             />
             <q-input 
               bottom-slots 
-              v-model="text" 
+              v-model="criticMessage" 
               label="Critica" 
               dark
             >
@@ -115,7 +102,7 @@
               </template>
   
               <template v-slot:after>
-                <q-btn round dense flat icon="send" />
+                <q-btn round dense flat icon="send" @click="SendCritic()" />
               </template>
             </q-input>
           </div>
@@ -132,13 +119,17 @@
 <script setup>
 
 import { onMounted, ref } from 'vue'
+import { LocalStorage } from 'quasar'
 import PortadaMovie from '../components/portada-movie.vue'
+import Alert from '../composables/Alert'
 import Movie from '../composables/Movie'
+import Reviews from '../composables/Reviews'
 
 const moviesShow = ref([]) 
 const showDetails = ref(false)
 const movieSelected = ref(null)
 const score = ref(0)
+const criticMessage = ref('')
 
 onMounted(async () => {
   await Movie.GetMovies()
@@ -146,9 +137,22 @@ onMounted(async () => {
 })
 
 
-function ShowDetails (movie) {
+async function ShowDetails (movie) {
   movieSelected.value = movie
   showDetails.value = true
+
+  await Reviews.GetUserReviews(movieSelected.value.id)
+}
+
+async function SendCritic () {
+  if (criticMessage.value === '' || criticMessage.value === null || criticMessage.value.length < 1) {
+    Alert.FailMessage({ message: 'Debes de ingresar la critica' })
+    return
+  }
+
+  const userConnect = LocalStorage.getItem('USER_NAME')
+  await Reviews.SendReviw({ movieId: movieSelected.value.id, userName: userConnect, score: score.value, critic: criticMessage.value  })
+  await Reviews.GetUserReviews(movieSelected.value.id)
 }
 
 </script>
@@ -215,6 +219,8 @@ function ShowDetails (movie) {
 .info-container {
   display: grid;
   grid-template-rows: 50% 50%;
+  width: 11rem;
+  overflow: auto;
 }
 
 .conteiner-chat {

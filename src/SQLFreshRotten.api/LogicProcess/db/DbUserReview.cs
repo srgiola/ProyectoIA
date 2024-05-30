@@ -80,6 +80,12 @@ namespace SQLFreshRotten.api.LogicProcess.db
                 if (criticType == null || string.IsNullOrEmpty(criticType.result))
                     throw new Exception("Critica no obtenida");
 
+                User? userFind = await _context.Users.Where(p => p.UserName == parameters.User)
+                                                    .FirstOrDefaultAsync();
+
+                if (userFind == null)
+                    throw new Exception("Usuario no encontrado");
+
                 UserReview userReview = new()
                 {
                       Movie = parameters.Movie,
@@ -87,7 +93,7 @@ namespace SQLFreshRotten.api.LogicProcess.db
                       ReviewDate = DateTime.Now,
                       ReviewScore = GetPrecision(parameters.Score),
                       ReviewStatus = criticType.result,
-                      User = parameters.User
+                      User = userFind.Id
                 };
 
                 LoadFactory factory = new EfLoadFactory(_context);

@@ -86,17 +86,17 @@ const isShowPassword = ref(false)
 const router = useRouter()
 
 async function AuthenticaUser () {
-  const isInvalid = this.HasInputInvalid()
+  const isInvalid = HasInputInvalid()
   if (isInvalid) {
     return
   }
 
-  const hasAcces = await this.HasAcces()
+  const hasAcces = await HasAcces()
   if (!hasAcces) {
     return    
   }
 
-  LocalStorage.setItem('USER_NAME', this.userName)
+  LocalStorage.setItem('USER_NAME', userName.value)
   console.log(LocalStorage.getItem('USER_NAME'))
   router.push({ name: 'main-page' })
   
@@ -105,12 +105,14 @@ async function AuthenticaUser () {
 function HasInputInvalid () {
   let hasError = false
 
+  console.log(userName.value)
+  console.log(password.value)
   try {
-    if (this.userName.length < 1) {
+    if (userName.value.length < 1) {
       throw Error('Campo, usuario. Requerido')
     }
 
-    if (this.password.length < 1) {
+    if (password.value.length < 1) {
       throw Error('Campo, contraseña. Requerido')
     }
 
@@ -129,7 +131,7 @@ async function HasAcces () {
   
   try {
     Load.ShowLoading()
-    const response = await Api.SendRequest().get(`${Variables.ENPOINT_VALIDATE_USER}?user=${this.userName}&password=${this.password}`)
+    const response = await Api.SendRequest().get(`${Variables.ENPOINT_VALIDATE_USER}?user=${userName.value}&password=${password.value}`)
     const data = response.data
     const result = data.data
 
