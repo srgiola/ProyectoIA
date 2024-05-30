@@ -10,6 +10,9 @@ def evaluate_model(data, label):
     correct = 0
     total = 0
     for record, review_type in zip(data['review_content'], data['review_type']):
+        # Verificar si el valor es NaN o está vacío
+        if pd.isna(record) or pd.isna(review_type) or record == '' or review_type == '':
+            continue
         prediction = Is_Fresh_Or_Rotten(record)
         if prediction == review_type:
             correct += 1
@@ -20,9 +23,8 @@ def evaluate_model(data, label):
 print("Evaluando...")
 
 train_accuracy = evaluate_model(train_data, "Training")
-valid_accuracy = evaluate_model(valid_data, "Validation")
-
 print(f"Presición del modelo: {train_accuracy:.2f}")
+valid_accuracy = evaluate_model(valid_data, "Validation")
 print(f"Presición de la evaluación: {valid_accuracy:.2f}")
 
 # Verificar si el modelo está sobreentrenado

@@ -1,8 +1,31 @@
 import nltk
 import joblib
 from math import log
+import re
+import string
 
 nltk.download('punkt')
+
+def clean_text(text):
+    # Convertir todo el texto a minúsculas
+    text = text.lower()
+    
+    # Eliminar signos de puntuación especificados
+    text = re.sub(r'[.,;[\](){}!¡¿?/\~+\-@<>"\'#%&=|]', '', text)
+    
+    # Sustituir los signos "-" y "_" por un espacio
+    text = text.replace('-', ' ').replace('_', ' ')
+    
+    # Eliminar saltos de línea y tabulaciones
+    text = text.replace('\n', ' ').replace('\t', ' ')
+    
+    # Eliminar dobles espacios
+    text = re.sub(' +', ' ', text)
+    
+    # Eliminar espacios al inicio y al final
+    text = text.strip()
+    
+    return text
 
 # Cargar el modelo entrenado
 model = joblib.load('pkl/model.pkl')
@@ -31,6 +54,7 @@ def Get_Message_Probability(message, log_prior, conditional_prob_table, total):
 
 # Función para predecir si un mensaje es "fresh" o "rotten"
 def Is_Fresh_Or_Rotten(message):
+    message = clean_text(message);
     log_prob_fresh = Get_Message_Probability(message, log_prior_fresh, conditional_prob_table_fresh, total_fresh)
     log_prob_rotten = Get_Message_Probability(message, log_prior_rotten, conditional_prob_table_rotten, total_rotten)
     

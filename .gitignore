@@ -1,3 +1,7 @@
+clasificador/dataset.csv
+clasificador/pkl/train_data.pkl
+clasificador/pkl/valid_data.pkl
+
 # Node.js
 node_modules/
 npm-debug.log
