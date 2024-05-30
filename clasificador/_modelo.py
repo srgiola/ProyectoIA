@@ -4,6 +4,8 @@ import nltk
 from collections import defaultdict
 from sklearn.model_selection import train_test_split
 from math import log
+import re
+import string
 
 nltk.download('punkt')
 
@@ -36,12 +38,38 @@ valid_data.to_pickle('pkl/valid_data.pkl')
 train_data = pd.concat(train_data_chunks)
 train_data.to_pickle('pkl/train_data.pkl')
 
+def clean_text(text):
+    # Convertir todo el texto a minúsculas
+    text = text.lower()
+    
+    # Eliminar signos de puntuación especificados
+    text = re.sub(r'[.,;[\](){}!¡¿?/\~+\-@<>"\'#%&=|]', '', text)
+    
+    # Sustituir los signos "-" y "_" por un espacio
+    text = text.replace('-', ' ').replace('_', ' ')
+    
+    # Eliminar saltos de línea y tabulaciones
+    text = text.replace('\n', ' ').replace('\t', ' ')
+    
+    # Eliminar dobles espacios
+    text = re.sub(' +', ' ', text)
+    
+    # Eliminar espacios al inicio y al final
+    text = text.strip()
+    
+    return text
+
 # Leer el archivo CSV en chunks
 for chunk in train_data_chunks:
     # Procesar cada fila del chunk
     for record, review_type in zip(chunk['review_content'], chunk['review_type']):
-        tokens = nltk.word_tokenize(record, language='english')
-        # Determinar a que BoW pertenen los tokens
+        # Verificar si el valor es NaN
+        if pd.isna(record) or pd.isna(review_type):
+            continue
+        # Limpiar el texto antes de tokenizar
+        cleaned_record = clean_text(record)
+        tokens = nltk.word_tokenize(cleaned_record, language='english')
+        # Determinar a que BoW pertenecen los tokens
         if review_type == 'fresh':
             count_fresh += 1
             for token in tokens:
@@ -82,3 +110,7 @@ model = {
     'total_rotten': total_rotten
 }
 joblib.dump(model, 'pkl/model.pkl')
+
+print(f"count_fresh '{count_fresh}'")
+print(f"count_rotten '{count_rotten}'")
+print("Modelo Entrenado")
