@@ -1,7 +1,10 @@
-﻿using NLog;
+﻿using Microsoft.EntityFrameworkCore;
+using NLog;
 using SQLFreshRotten.api.Abstracts;
+using SQLFreshRotten.api.LogicModels.Api;
 using SQLFreshRotten.api.LogicProcess.implements;
 using SQLFreshRotten.api.LogicProcess.managmentfiles;
+using SQLFreshRotten.api.LogicProcess.microservices;
 using SQLFreshRotten.api.Models;
 using SQLFreshRotten.api.ProviderContext;
 
@@ -61,5 +64,64 @@ namespace SQLFreshRotten.api.LogicProcess.db
 
         private decimal GetPrecision(decimal value)
             => Math.Round(value, 1);
+
+        public async Task<bool> AddReview (ReviewRequest parameters)
+        {
+            bool isAdded;
+            try
+            {
+                CriticRequest critic = new()
+                {
+                    critic = parameters.Critc
+                };
+
+                ReviewService service = new();
+                ResponseRewiew criticType = await service.GetReview(critic);
+                if (criticType == null || string.IsNullOrEmpty(criticType.result))
+                    throw new Exception("Critica no obtenida");
+
+                UserReview userReview = new()
+                {
+                      Movie = parameters.Movie,
+                      ReviewContent = parameters.Critc,
+                      ReviewDate = DateTime.Now,
+                      ReviewScore = GetPrecision(parameters.Score),
+                      ReviewStatus = criticType.result,
+                      User = parameters.User
+                };
+
+                LoadFactory factory = new EfLoadFactory(_context);
+                var addRange = factory.AddItemRange<UserReview>();
+                await addRange.InsertOne(userReview);
+
+                isAdded = true;
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("No se agrego la critica del usuario");
+                _logger.Error($"Ms: {ex.Message}, St: {ex.StackTrace}");
+                isAdded = false;
+            }
+
+            return isAdded;
+        }
+    
+        public async Task<List<UserCritic>> GetReviews (long movieId)
+        {
+            List<UserCritic> critics = await (
+                                                from user_review in _context.UserReviews
+                                                join user in _context.Users
+                                                    on user_review.Id equals user.Id
+                                                where user_review.Movie == movieId
+                                                select new UserCritic
+                                                {
+                                                    Critic = user_review.ReviewContent,
+                                                    User = user.Id,
+                                                    UserName = user.UserName
+                                                }
+                                             ).ToListAsync();
+
+            return critics;
+        }
     }
 }

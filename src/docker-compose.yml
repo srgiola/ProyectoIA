@@ -39,6 +39,16 @@ services:
   environment:
     - DBHOST=db
     - ASPNETCORE_ENVIRONMENT=Development
+ ui:
+  container_name: ui-view
+  build:
+    context: ./FreshRotten.ui
+    dockerfile: Dockerfile
+  depends_on:
+    - api
+  ports:
+   - "54813:80"
+  restart: always
 
 networks:
   default:

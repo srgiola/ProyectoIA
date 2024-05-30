@@ -1,5 +1,7 @@
-﻿using NLog;
+﻿using Microsoft.EntityFrameworkCore;
+using NLog;
 using SQLFreshRotten.api.Abstracts;
+using SQLFreshRotten.api.LogicModels.Api;
 using SQLFreshRotten.api.LogicProcess.implements;
 using SQLFreshRotten.api.LogicProcess.managmentfiles;
 using SQLFreshRotten.api.Models;
@@ -86,5 +88,36 @@ namespace SQLFreshRotten.api.LogicProcess.db
         private decimal GetPrecision(decimal value)
             => Math.Round(value, 1);
 
+        public async Task<List<MovieInformation>> GetMovieInformation ()
+        {
+            List<MovieInformation> moviewInformation = new ();
+
+            try
+            {
+                const string API_URL_LOCAL = "http://localhost:5079/";
+                const string API_URL_PROD = "http://ia-api:8080";
+
+                moviewInformation = await (
+                                            from movie in _context.Movies
+                                                join portada in _context.Portadas
+                                                on movie.Id equals portada.Movie
+                                            select new MovieInformation
+                                            {
+                                                Id = movie.Id,
+                                                Description = movie.Description,
+                                                Title = movie.Title,
+                                                MovieDevURL = $"{API_URL_LOCAL}/images/{movie.Id}.jpg",
+                                                MovieProdURL = $"{API_URL_PROD}/images/{movie.Id}.jpg"
+                                            }
+                                          ).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.Error("Problemas al obtener el url");
+                _logger.Error($"Ms: {ex.Message}, St: {ex.StackTrace}");
+            }
+
+            return moviewInformation;
+        }
     }
 }

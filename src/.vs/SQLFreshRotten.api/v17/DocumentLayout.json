@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Practica\\Python\\ProyectoIA\\src\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\logicprocess\\db\\dbuserreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\logicprocess\\db\\dbuserreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\logicprocess\\operation\\loaddefaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\logicprocess\\operation\\loaddefaultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\logicmodels\\api\\usercritic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\logicmodels\\api\\usercritic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\logicprocess\\microservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\logicprocess\\microservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|d:\\practica\\python\\proyectoia\\src\\sqlfreshrotten.api\\logicprocess\\managmentfiles\\managmentfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E0E2633-1E9D-4495-B7B1-038565AD939B}|SQLFreshRotten.api\\SQLFreshRotten.api.csproj|solutionrelative:sqlfreshrotten.api\\logicprocess\\managmentfiles\\managmentfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +51,110 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserCritic.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicModels\\Api\\UserCritic.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\LogicModels\\Api\\UserCritic.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicModels\\Api\\UserCritic.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\LogicModels\\Api\\UserCritic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:15:33.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataController.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Controllers\\DataController.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\Controllers\\DataController.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Controllers\\DataController.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\Controllers\\DataController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAEwDIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T03:57:16.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoadDefaultData.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\operation\\LoadDefaultData.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\LogicProcess\\operation\\LoadDefaultData.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\operation\\LoadDefaultData.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\LogicProcess\\operation\\LoadDefaultData.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAIAxwBAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T03:57:16.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ManagmentFile.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\managmentfiles\\ManagmentFile.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\LogicProcess\\managmentfiles\\ManagmentFile.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\managmentfiles\\ManagmentFile.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\LogicProcess\\managmentfiles\\ManagmentFile.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAEwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T03:57:16.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\microservices\\ReviewService.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\LogicProcess\\microservices\\ReviewService.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\microservices\\ReviewService.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\LogicProcess\\microservices\\ReviewService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAEwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:55:08.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\Controllers\\ReviewController.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\Controllers\\ReviewController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAswFkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:55:08.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbUserReview.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\db\\DbUserReview.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\LogicProcess\\db\\DbUserReview.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\LogicProcess\\db\\DbUserReview.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\LogicProcess\\db\\DbUserReview.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAxwGwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:54:54.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Program.cs",
+              "RelativeDocumentMoniker": "SQLFreshRotten.api\\Program.cs",
+              "ToolTip": "D:\\Practica\\Python\\ProyectoIA\\src\\SQLFreshRotten.api\\Program.cs",
+              "RelativeToolTip": "SQLFreshRotten.api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:54:13.395Z",
+              "EditorCaption": ""
             }
           ]
         }

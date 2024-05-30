@@ -17,5 +17,10 @@ namespace SQLFreshRotten.api.LogicProcess.implements
         {
             return new RecordModify<T>(_context);
         }
+
+        public override ILoad<T> AddItem<T>()
+        {
+            return new RecordModify<T>(_context);
+        }
     }
 }

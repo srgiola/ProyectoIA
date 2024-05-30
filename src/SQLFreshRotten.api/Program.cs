@@ -21,6 +21,7 @@ namespace SQLFreshRotten.api
             builder.Services.AddDbContextPool<DbCtx>(options =>
             {
                 string connection = "Server=db;Uid=root;Pwd=root;port=3306;Database=perceptron";
+                //string connection = "Server=localhost;Uid=root;Pwd=root;port=3306;Database=perceptron";
                 MySqlServerVersion serverVersion = new(new Version(8,0,4));
                 options.UseMySql(connection, serverVersion);
             });
@@ -48,6 +49,7 @@ namespace SQLFreshRotten.api
                        );
             app.UseAuthorization();
             app.MapControllers();
+            app.UseStaticFiles();
             app.Run();
         }
     }

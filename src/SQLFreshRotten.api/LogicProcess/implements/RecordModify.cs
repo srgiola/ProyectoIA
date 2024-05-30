@@ -17,5 +17,11 @@ namespace SQLFreshRotten.api.LogicProcess.implements
             await _context.Set<T>().AddRangeAsync(entitys);
             await _context.SaveChangesAsync();
         }
+
+        public async Task InsertOne(T entity)
+        {
+            await _context.Set<T>().AddAsync(entity);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -22,6 +22,9 @@ namespace SQLFreshRotten.api.LogicProcess.operation
 
             DbUserReview dbUserReview = new(_context);
             await dbUserReview.SetDefaultReviews();
+
+            DbPortada dbPortada = new(_context);
+            await dbPortada.SetDefault();
         }
     }
 }
