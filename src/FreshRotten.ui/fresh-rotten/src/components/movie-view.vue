@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-rows-[40%_60%] h-[100vh]">
-    <div>
+    <Transition appear>
       <PortadaMovie></PortadaMovie>
-    </div>
+    </Transition>
     
     <div class="grid-container overflow-auto">
         <div 

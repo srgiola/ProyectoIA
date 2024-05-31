@@ -4,6 +4,7 @@ import Alert from './Alert'
 import Variables from 'src/models/Variables'
 
 const movies = ref([])
+const hasMovies = ref(false)
 
 async function GetMovies () {
   try {
@@ -21,8 +22,7 @@ async function GetMovies () {
                             }
                           })
 
-    console.log(movies.value)
-
+    hasMovies.value = movies.value.length > 1
   }
   catch (error) {
     const errorResponse = Api.FailRequest(error)
@@ -33,5 +33,6 @@ async function GetMovies () {
 
 export default {
   movies,
+  hasMovies,
   GetMovies
 }

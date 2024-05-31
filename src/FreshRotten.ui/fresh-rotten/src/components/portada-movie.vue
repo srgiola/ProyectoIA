@@ -2,7 +2,16 @@
   <div
     style="padding: 1rem;"
   >
+    <q-skeleton 
+      height="200px"
+      square
+      v-if="moviesShow.length < 1"
+      class="carousel bg-red-800 opacity-70"
+      animation-speed="5000"
+      animation="pulse"
+    />
     <q-carousel
+        v-else
         animated
         v-model="slide"
         infinite
