@@ -12,27 +12,13 @@ FROM node:20.13-alpine
   # generar compilado de la aplicacion
   RUN quasar build
 
-# Publicar aplicacion en apache
-FROM ubuntu:20.04
-  
-  # Instalar paquetes
-  RUN apt-get update
-  RUN apt-get install wget -y
-  RUN apt-get install --reinstall systemd -y
-  RUN apt-get install apache2 -y
+# Publicar aplicacion en ngix
+FROM nginx:alpine
 
-  # Modulos Requeridos
-  RUN a2enmod rewrite
-  RUN a2enmod proxy
-  RUN a2enmod proxy_http
-  RUN a2enmod headers
-  RUN a2enmod ssl
+COPY ./conf/nginx.conf /etc/nginx/conf.d/default.conf
 
-  # Restar Server
-  RUN service apache2 restart
+COPY --from=0 /app/dist/spa /usr/share/nginx/html
 
-  # Copia en la carpeta apache
-  COPY --from=0 /app/dist/spa /var/www/html/
+EXPOSE 80
 
-EXPOSE 54813:80
-CMD apachectl -DFOREGROUND
+CMD [ "nginx", "-g", "daemon off;" ]

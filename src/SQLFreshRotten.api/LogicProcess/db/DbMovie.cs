@@ -6,6 +6,7 @@ using SQLFreshRotten.api.LogicProcess.implements;
 using SQLFreshRotten.api.LogicProcess.managmentfiles;
 using SQLFreshRotten.api.Models;
 using SQLFreshRotten.api.ProviderContext;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace SQLFreshRotten.api.LogicProcess.db
@@ -13,11 +14,13 @@ namespace SQLFreshRotten.api.LogicProcess.db
     public class DbMovie
     {
         private readonly DbCtx _context;
+        private readonly string _rootPath;
         private readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
-        public DbMovie (DbCtx context)
+        public DbMovie (DbCtx context, string rootPath = "")
         {
             _context = context;
+            _rootPath = rootPath;
         }
 
         public async Task SetDefaultMovies ()
@@ -94,8 +97,8 @@ namespace SQLFreshRotten.api.LogicProcess.db
 
             try
             {
-                const string API_URL_LOCAL = "http://localhost:5079/";
-                const string API_URL_PROD = "http://ia-api:8080";
+                const string data_b64_format = "data:image/png;base64";
+
 
                 moviewInformation = await (
                                             from movie in _context.Movies
@@ -106,10 +109,15 @@ namespace SQLFreshRotten.api.LogicProcess.db
                                                 Id = movie.Id,
                                                 Description = movie.Description,
                                                 Title = movie.Title,
-                                                MovieDevURL = $"{API_URL_LOCAL}/images/{movie.Id}.jpg",
-                                                MovieProdURL = $"{API_URL_PROD}/images/{movie.Id}.jpg"
+                                                MovieImageB64 = $""
                                             }
                                           ).ToListAsync();
+
+                foreach (var movie in moviewInformation)
+                {
+                    string base64 = GetImageB64(movie.Id);
+                    movie.MovieImageB64 = $"{data_b64_format}, {base64}";
+                }
             }
             catch (Exception ex)
             {
@@ -119,5 +127,17 @@ namespace SQLFreshRotten.api.LogicProcess.db
 
             return moviewInformation;
         }
+
+
+        private string GetImageB64 (long movieId)
+        {
+
+            string pathImage = Path.Combine(GetPathImages(), $"{movieId}.jpg");
+            byte[] bytesImage = File.ReadAllBytes(pathImage);
+
+            return Convert.ToBase64String(bytesImage);
+        }
+        private string GetPathImages ()
+            => Path.Combine(_rootPath, "wwwroot", "images");
     }
 }

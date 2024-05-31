@@ -5,6 +5,14 @@ volumes:
 
 name: ia-rotten-fresh
 services:
+ ui:
+  container_name: ui-view
+  build:
+    context: ./FreshRotten.ui
+    dockerfile: Dockerfile
+  ports:
+   - "54813:80"
+  restart: always
  clasific:
   container_name: ia-clasific
   volumes:
@@ -33,22 +41,13 @@ services:
   depends_on:
    - db
    - clasific
+   - ui
   ports:
    - "8080:8080"
   restart: always
   environment:
     - DBHOST=db
     - ASPNETCORE_ENVIRONMENT=Development
- ui:
-  container_name: ui-view
-  build:
-    context: ./FreshRotten.ui
-    dockerfile: Dockerfile
-  depends_on:
-    - api
-  ports:
-   - "54813:80"
-  restart: always
 
 networks:
   default:

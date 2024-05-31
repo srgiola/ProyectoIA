@@ -17,7 +17,7 @@ async function GetMovies () {
                               id: movie.id,
                               title: movie.title,
                               description: movie.description,
-                              url: Variables.DEV_MODE ? movie.movieDevURL : movie.movieProdURL
+                              url: movie.movieImageB64
                             }
                           })
 

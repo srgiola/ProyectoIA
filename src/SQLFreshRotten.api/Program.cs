@@ -43,6 +43,7 @@ namespace SQLFreshRotten.api
             });
 
             // INFO: Es para estudiar no debeira de tener cors
+            app.UseRouting();
             app.UseCors("AllowAll");
 
             app.MapGet("/", context 

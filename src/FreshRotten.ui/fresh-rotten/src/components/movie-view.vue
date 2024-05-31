@@ -75,7 +75,7 @@
               :key="index"
             >
               <q-chat-message v-if="review.isMeMessage" :text="[`${review.message}`]" sent style="padding: 1rem;"  />
-              <q-chat-message :text="[`${review.message}`]" style="padding: 1rem;" />
+              <q-chat-message v-else :text="[`${review.message}`]" style="padding: 1rem;" />
             </section>
           </div>
           

@@ -10,10 +10,12 @@ namespace SQLFreshRotten.api.Controllers
     public class MovieController : Controller
     {
         private readonly DbCtx _context;
+        private readonly IHostEnvironment _environment;
 
-        public MovieController(DbCtx context)
+        public MovieController(DbCtx context, IHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         [HttpGet("all-movies/")]
@@ -21,7 +23,7 @@ namespace SQLFreshRotten.api.Controllers
         {
             try
             {
-                DbMovie dbMovie = new (_context);
+                DbMovie dbMovie = new (_context, _environment.ContentRootPath);
                 
                 return Ok(new ResponseRequest<dynamic>()
                 {

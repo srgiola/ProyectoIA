@@ -117,7 +117,7 @@ namespace SQLFreshRotten.api.LogicProcess.db
             List<UserCritic> critics = await (
                                                 from user_review in _context.UserReviews
                                                 join user in _context.Users
-                                                    on user_review.Id equals user.Id
+                                                    on user_review.User equals user.Id
                                                 where user_review.Movie == movieId
                                                 select new UserCritic
                                                 {

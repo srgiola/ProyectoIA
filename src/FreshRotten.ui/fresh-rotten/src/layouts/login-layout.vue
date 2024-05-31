@@ -132,6 +132,7 @@ async function HasAcces () {
   try {
     Load.ShowLoading()
     const response = await Api.SendRequest().get(`${Variables.ENPOINT_VALIDATE_USER}?user=${userName.value}&password=${password.value}`)
+    console.log(response)
     const data = response.data
     const result = data.data
 
@@ -141,6 +142,7 @@ async function HasAcces () {
     }
   }
   catch (error) {
+    console.log('error en validar acceso')
     const messageFail = Api.FailRequest(error)
     Alert.FailMessage({ message: messageFail })
     hasAcces = false

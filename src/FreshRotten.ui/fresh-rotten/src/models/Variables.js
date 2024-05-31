@@ -1,6 +1,4 @@
-//const API_URL = 'http://localhost:8080/api'
-const API_URL = 'http://ia-api:8080/api'
-//const API_URL = 'http://localhost:5079/api'
+const API_URL = '/api'
 const CONTROLLER_USER = 'User'
 const CONTROLLER_MOVIE = 'Movie'
 const CONTROLLER_REVIEW = 'Review'

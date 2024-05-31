@@ -5,7 +5,6 @@
         public long Id { get; set; }
         public string Title       { get; set; } = "";
         public string Description { get; set; } = "";
-        public string MovieDevURL    { get; set; } = "";
-        public string MovieProdURL { get; set; } = "";
+        public string MovieImageB64 { get; set; } = "";
     }
 }

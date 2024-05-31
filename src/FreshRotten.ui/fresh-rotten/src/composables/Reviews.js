@@ -15,6 +15,7 @@ async function GetUserReviews (movieId) {
     const result = content.data
     
     userReviews.value = result.map(m => { return { message: m.critic, userName: m.userName , isMeMessage: userConnect === m.userName } })
+    console.log(userReviews)
   }
   catch (err) {
     const errorResponse = Api.FailRequest(err)
