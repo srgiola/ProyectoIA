@@ -46,3 +46,15 @@ Para construir y ejecutar la API de Flask, sigue estos pasos:
 [Rotten Tomatoes IA](http://localhost:54813/#/) 
 
 [API](http://localhost:8080/swagger/index.html)
+
+## Arquitectura del software
+
+```mermaid
+graph LR
+    A[vue-app] -- request --> B((.net api))
+    B -- dbActions --> C(mysql)
+    B -- critic --> D(flask app)
+    D -- review-type --> B(.net api)
+    C --> B(.net api)
+    B --> A(vue-app)
+```
