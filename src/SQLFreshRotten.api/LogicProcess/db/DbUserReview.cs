@@ -14,6 +14,7 @@ namespace SQLFreshRotten.api.LogicProcess.db
     {
         private readonly DbCtx _context;
         private readonly Logger _logger = LogManager.GetCurrentClassLogger();
+        private string _response = string.Empty;
 
         public DbUserReview(DbCtx context)
         {
@@ -101,6 +102,7 @@ namespace SQLFreshRotten.api.LogicProcess.db
                 await addRange.InsertOne(userReview);
 
                 isAdded = true;
+                _response = criticType.result;
             }
             catch (Exception ex)
             {
@@ -129,5 +131,8 @@ namespace SQLFreshRotten.api.LogicProcess.db
 
             return critics;
         }
+
+        public string GetCriticResult()
+            => _response;
     }
 }

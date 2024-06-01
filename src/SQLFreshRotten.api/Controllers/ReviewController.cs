@@ -60,7 +60,7 @@ namespace SQLFreshRotten.api.Controllers
 
                 return Ok(new ResponseRequest<dynamic>()
                 {
-                    Data = new { IsAdded = true },
+                    Data = new { IsAdded = true, CriticResult = dbUserReview.GetCriticResult() },
                     Description = "Critica, agregada",
                 });
             }
@@ -68,7 +68,7 @@ namespace SQLFreshRotten.api.Controllers
             {
                 return BadRequest(new ResponseRequest<dynamic>()
                 {
-                    Data = new { IsAdded = false },
+                    Data = new { IsAdded = false, CriticResult = string.Empty },
                     Description = "Critica, no agregada",
                     FailReponse = new FailResponse()
                     {
