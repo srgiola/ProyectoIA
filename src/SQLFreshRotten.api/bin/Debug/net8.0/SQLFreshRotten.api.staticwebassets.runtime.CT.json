@@ -1,0 +1,31 @@
+{
+  "ContentRoots": [
+    "/src/wwwroot/"
+  ],
+  "Root": {
+    "Children": {
+      "files": {
+        "Children": {
+          "users.txt": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "files/users.txt"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

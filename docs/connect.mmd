@@ -1,0 +1,7 @@
+graph LR
+    A[react-app] -- request --> B((.net api))
+    B -- dbActions --> C(mysql)
+    B -- critic --> D(flask app)
+    D -- review-type --> B(.net api)
+    C --> B(.net api)
+    B --> A(react-app)

@@ -1,0 +1,6 @@
+@SQLFreshRotten.api_HostAddress = http://localhost:5079
+
+GET {{SQLFreshRotten.api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
