@@ -14,7 +14,7 @@ async function GetUserReviews (movieId) {
     const content = response.data
     const result = content.data
     
-    userReviews.value = result.map(m => { return { message: m.critic, userName: m.userName , isMeMessage: userConnect === m.userName } })
+    userReviews.value = result.map(m => { return { message: m.critic, userName: m.userName , isMeMessage: userConnect === m.userName, resultIa: m.resultIa } })
     console.log(userReviews)
   }
   catch (err) {
@@ -32,8 +32,7 @@ async function SendReviw ({ movieId, userName, score, critic }) {
       score: score
     }
 
-    const response = await Api.SendRequest().post(`${Variables.ENPOINT_SEND_CRITIC}`, data);
-    console.log(response)
+    const response = await Api.SendRequest().post(`${Variables.ENPOINT_SEND_CRITIC}`, data);    
   }
   catch (err) {
     const errorResponse = Api.FailRequest(err)

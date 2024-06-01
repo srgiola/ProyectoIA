@@ -1,10 +1,10 @@
 ﻿1, 1, 8.5, A captivating drama with a twisty plot and strong performances., Rotten, 2024-05-21
 1, 3, 7.2, An enjoyable animation with a heartwarming message., Fresh, 2024-05-20
 1, 2, 9.0, A visually stunning documentary showcasing the beauty of the ocean., Rotten, 2024-05-19
-2, 1, 8.0, A classic adventure film with exciting action sequences., Fresh, 2024-05-18
-3, 5, 7.5, A gripping suspense film with strong performances from the cast., Rotten, 2024-05-17
-4, 6, 6.5, Disappointing plot twists and lackluster acting., Fresh, 2024-05-16
-5, 7, 8.8, A charming animation that appeals to both children and adults., Rotten, 2024-05-15
-6, 1, 7.0, Informative documentary but lacks a compelling narrative., Fresh, 2024-05-14
-7, 2, 9.5, A timeless classic with memorable characters and thrilling adventure., Fresh, 2024-05-13
-2, 3, 8.2, Suspenseful and engaging from start to finish., Rotten, 2024-05-12
+1, 1, 8.0, A classic adventure film with exciting action sequences., Fresh, 2024-05-18
+1, 5, 7.5, A gripping suspense film with strong performances from the cast., Rotten, 2024-05-17
+1, 6, 6.5, Disappointing plot twists and lackluster acting., Fresh, 2024-05-16
+1, 7, 8.8, A charming animation that appeals to both children and adults., Rotten, 2024-05-15
+1, 1, 7.0, Informative documentary but lacks a compelling narrative., Fresh, 2024-05-14
+1, 2, 9.5, A timeless classic with memorable characters and thrilling adventure., Fresh, 2024-05-13
+1, 3, 8.2, Suspenseful and engaging from start to finish., Rotten, 2024-05-12

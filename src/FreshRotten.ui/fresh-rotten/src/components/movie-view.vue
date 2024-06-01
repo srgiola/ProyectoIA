@@ -16,7 +16,7 @@
               style="width: 8rem; height: 7.5rem;"
             >
             <div>
-                  <h6 style="width: 7rem;overflow-x: hidden;margin-left: 1rem;color: white;max-height: 7rem;overflow: hidden;">
+                  <h6 style="width: 12rem;overflow-x: hidden;margin-left: 1rem;color: white;max-height: 7rem;overflow: hidden;">
                     {{ movie.title }}
                   </h6>
             </div>
@@ -74,8 +74,8 @@
               v-for="(review, index) in Reviews.userReviews.value"
               :key="index"
             >
-              <q-chat-message v-if="review.isMeMessage" :text="[`${review.message}`]" sent style="padding: 1rem;"  />
-              <q-chat-message v-else :text="[`${review.message}`]" style="padding: 1rem;" />
+              <q-chat-message v-if="review.isMeMessage" :text="[`${review.message}`]" :name="review.resultIa" sent style="padding: 1rem;"  />
+              <q-chat-message v-else :text="[`${review.message}`]" :name="review.resultIa" style="padding: 1rem;" />
             </section>
           </div>
           

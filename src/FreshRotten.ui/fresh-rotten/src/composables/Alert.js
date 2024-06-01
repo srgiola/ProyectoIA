@@ -15,6 +15,22 @@ function FailMessage ({ message }) {
   })
 }
 
+function OkMessage ({ message }) {
+  Notify.create({
+    message: message,
+    type: 'positive',
+    position: 'center',
+    color: 'white',
+    iconColor: 'black',
+    textColor: 'black',
+    icon: 'bi-bug-fill',
+    actions: [
+      { label: 'Ok', color: 'black', handler: () => { /* ... */ } }
+    ]
+  })
+}
+
 export default {
-  FailMessage
+  FailMessage,
+  OkMessage
 }

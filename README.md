@@ -28,27 +28,21 @@ Para construir y ejecutar el motor de clasificación, sigue estos pasos:
 
     Este comando ejecuta un contenedor interactivo basado en la imagen `motor`, monta el directorio local `clasificador` en `/app` dentro del contenedor, y abre una sesión de shell en el contenedor.
 
-### API con Flask
+### Proyecto Web
 
 Para construir y ejecutar la API de Flask, sigue estos pasos:
 
-1. Construir la imagen de Docker para la API de Flask:
+1. Construir las imagenes de docker:
     ```bash
-    docker build -t backend -f Dockerfile.backend .
+    docker compose up
     ```
 
-    Este comando crea una imagen de Docker llamada `backend` utilizando el archivo `Dockerfile.backend` en el directorio actual.
-
-2. Ejecutar el contenedor de la API en modo interactivo:
+2. Eliminar contenedores e images:
     ```bash
-    docker run -it -p 5000:5000 -v ${PWD}/api:/app backend /bin/sh
+    docker-compose down --rmi all
     ```
 
-    Este comando ejecuta un contenedor interactivo basado en la imagen `backend`, monta el directorio local `api` en `/app` dentro del contenedor, mapea el puerto 5000 del contenedor al puerto 5000 de la máquina host, y abre una sesión de shell en el contenedor.
+## Visualizar el sitio
+[Rotten Tomatoes IA](http://localhost:54813/#/) 
 
-3. Ejecutar el contenedor de la API en modo desatendido:
-    ```bash
-    docker run -d -p 5000:5000 backend
-    ```
-
-    Este comando ejecuta un contenedor basado en la imagen `backend` en segundo plano (modo desatendido), mapeando el puerto 5000 del contenedor al puerto 5000 de la máquina host.
+[API](http://localhost:8080/swagger/index.html)
