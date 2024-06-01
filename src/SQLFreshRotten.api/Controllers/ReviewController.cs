@@ -18,8 +18,7 @@ namespace SQLFreshRotten.api.Controllers
         {
             _context = context;
         }
-
-
+        
         [HttpPost("review-type/")]
         public async Task<ActionResult<ResponseRequest<ResponseRewiew>>> ReviewType([FromBody] CriticRequest paramerts)
         {
@@ -89,7 +88,7 @@ namespace SQLFreshRotten.api.Controllers
                 return Ok(new ResponseRequest<dynamic>()
                 {
                     Data = await dbUserReview.GetReviews(movieId),
-                    Description = "Critica, agregada",
+                    Description = "Criticas, obtenidas",
                 });
             }
             catch (Exception ex)

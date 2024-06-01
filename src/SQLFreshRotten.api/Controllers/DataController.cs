@@ -71,5 +71,36 @@ namespace SQLFreshRotten.api.Controllers
                 });
             }
         }
+
+        [HttpPost("delete-database")]
+        public ActionResult<ResponseRequest<dynamic>> DeleteDataBase ()
+        {
+            try
+            {
+                bool isDelete = _context.Database.EnsureDeleted();
+                if (!isDelete)
+                    throw new Exception("No se eliminino la base de datos, intente de nuevo");
+
+                return Ok(new ResponseRequest<dynamic>()
+                {
+                    Data = new { IsDelete = false },
+                    Description = "Base de datos, eliminada"
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseRequest<dynamic>()
+                {
+                    Data = new { IsDelete = false },
+                    Description = "Base de datos, no eliminada",
+                    FailReponse = new FailResponse()
+                    {
+                        IsFail = true,
+                        Exception = ex.Message
+                    }
+                });
+            }
+        }
+    
     }
 }
