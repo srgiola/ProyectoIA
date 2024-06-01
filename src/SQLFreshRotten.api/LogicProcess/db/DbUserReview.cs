@@ -125,7 +125,8 @@ namespace SQLFreshRotten.api.LogicProcess.db
                                                 {
                                                     Critic = user_review.ReviewContent,
                                                     User = user.Id,
-                                                    UserName = user.UserName
+                                                    UserName = user.UserName,
+                                                    ResultIa = user_review.ReviewStatus
                                                 }
                                              ).ToListAsync();
 
